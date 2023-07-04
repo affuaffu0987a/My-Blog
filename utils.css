@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Roboto:wght@300&display=swap');
 
 :root{
-    --main-bg-color: brown;
+    --main-bg-color: wheat;
     --font1:'Baloo Bhai 2', cursive;
     --font2: 'Roboto', sans-serif;
 }
@@ -23,13 +23,16 @@
     border: 1px solid black;
     padding: 2px 8px;
     font-size: 13px;
-    background-color: whitesmoke;
+    background-color: rgb(248, 239, 239,0.5);
     color: black;
     font-style: var(--font2);
     border-radius: 5px;
+    transition: all 0.8s ease-in-out;
+    font-weight:700;
 }
 .btn:hover{
-    background-color: transparent;
+    background-color: black;
+    color: white;
 }
 
 .form-input{

@@ -7,6 +7,7 @@
     font-family: var(--font1);
     height: 74px;
     /* background-color: red; */
+    box-shadow: 0px 8px 3px -7px rgb(0.5, 0.5, 0.05);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,9 +16,13 @@
 .nav-left{
     display: flex;
 }
+.nav-right{
+    padding: 0 3px;
+}
 .nav-left span{
-    font-size: 22px;
+    font-size: 28px;
     cursor: pointer;
+    font-weight: 900;
 }
 
 .nav-left ul{
@@ -33,20 +38,37 @@
 .nav-left ul li a{
     text-decoration: none;
     color: black;
+    font-size: 22px;
 }
 
 .content{
-    /* height: 95px; */
+    height: 60vh;
     /* background: purple; */
     display: flex;
     font-style: var(--font2);
+    margin-top: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+   
 }
+.content::after{
+    content: "";
+    background-image: url('img/11.svg');
+    position: absolute;
+    width: 100%;
+    height: inherit !important;
+    opacity: 0.15;
+}
+
 .content-left{
-    width: 50%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     /* align-items: center; */
     flex-direction: column;
+    justify-content: center;
+    /* margin-top: 250px; */
+    padding:50px;
+    /* margin-left: 5rem; */
    
 }
 .content-right{
@@ -54,14 +76,57 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 5rem;
 }
 .content-right img{
-    height: 20rem;
+    height: 15rem;
     border: 1px solid black;
     border-radius: 50%;
 }
 
 .footer{
     height: 50px;
-    background-color: yellow;
+    background-color: black;
+    font-style: var(--font1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.icon{
+    margin-top: .5rem;
+    font-size: 1rem;
+}
+.icon i{
+    padding: 0 5px;
+    color: white;
+}
+
+.home-articles{
+    background-color:rgb(248, 239, 239,0.5);
+    /* height: 455px; */
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+.home-articles h2{
+    padding: 25px;
+}
+
+.home-article{
+    display: flex;
+    padding: 3px 30px;
+    margin-top: 12px;
+    
+}
+
+.home-article img{
+    width: 275px;
+}
+
+.home-article-content{
+   align-self: center;
+   padding: 0 25px;
+   font-style: var(--font1);
 }
