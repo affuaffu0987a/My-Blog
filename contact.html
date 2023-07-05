@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="utils.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="css/contact.css">
     <title>MyBlog</title>
   </head>
   <body>
@@ -23,12 +24,25 @@
       </div>
       <div class="nav-right">
         <input type="text" class="form-input" placeholder="Article Search" />
-        <button class="btn">Search</button>
+        <a href="search.html"><button class="btn">Search</button></a>
       </div>
     </nav>
-    <div class="content max-width-1 m-auto">
-      <div class="content-left">
-        <h1>It's Your Blogger</h1>
+    <div class="content max-width-1 m-auto contact-content">
+      <div class="contact-form">
+        <h1>Feel Free To Contact Us🥳</h1>
+        <form action="" id="form-top">
+          <div class="form-inputs">
+            <input type="text"  placeholder="Enter Your Name"/>
+          </div>
+          <div class="form-inputs">
+            <input type="username" placeholder="Enter Your username"/>
+          </div>
+          <div class="form-inputs">
+            <input type="password" placeholder="Enter Your password"/>
+          </div>
+            <textarea name="query" id="text-area" rows="10" placeholder="How may we Help you!"></textarea>
+            <button class="btn">Submit</button>
+        </form> 
       </div>
     </div>   
     <div class="footer">

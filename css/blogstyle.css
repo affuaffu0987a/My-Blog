@@ -1,0 +1,33 @@
+
+.blog-bg{
+    width: 100%;
+    overflow: hidden;
+    height: 400px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    /* filter: blur(4px); */
+}
+
+.content-blogs{
+    display: flex;
+    font-style: var(--font2);
+    margin-top: 2rem;
+    margin-bottom: 20px;
+}
+
+.content-blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:50px;
+    font-style: 'Roboto', sans-serif;;
+}
+.content-blog h1{
+    text-align: center;
+}
+
+.blog-detail{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
